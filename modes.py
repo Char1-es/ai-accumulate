@@ -130,6 +130,8 @@ def run_json_mode():
     print(f"전체 테스트: {total}")
     print(f"통과: {passed}")
     print(f"실패: {failed}")
+    if total:
+        print(f"통과율: {passed / total * 100:.1f}%")
     if failed:
         print("실패 케이스:")
         for r in results:
